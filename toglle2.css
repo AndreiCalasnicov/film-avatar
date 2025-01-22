@@ -1,0 +1,47 @@
+/*  body{
+    margin: 0;
+    overflow: hidden;
+} */
+ iframe{
+    position: absolute;
+}
+label{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+div{
+    position: absolute;
+    bottom: -30%;
+    height: 30%;
+    width: 100%;
+ /*    background-color: rgb(127, 255, 136); */
+    transition: 0.5s;
+    
+}
+section:has(input:checked) div{
+    bottom: 0;
+}
+input{
+    display: none;
+} 
+section:has(input:checked) label{
+    bottom: 32%;
+    transition: 0.5s;
+}
+
+ 
+ 
+
+.audio {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.audio-player audio {
+    width: 50%;
+    margin-top: 5px;
+}
